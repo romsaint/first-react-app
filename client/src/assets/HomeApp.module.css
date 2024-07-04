@@ -1,0 +1,92 @@
+:root{
+
+}
+.homeDiv{
+    background-color: rgb(247, 241, 234);
+    color: rgb(50, 50, 50);
+}
+* {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.bgTomato{
+    background-color: tomato;
+
+}
+.createMsgBtn{
+    background-color: rgb(167 205 111);
+} 
+.preload{
+    z-index: 100;
+}
+.loadSvg {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.ourHomeCard{
+    height: max-content;
+}
+.ourHomeCardNotLogin{
+    height: auto;
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "i1 i2" "i3 i3";
+    gap: 20px;
+}
+
+.messageContainer{
+    max-height: 464px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formSendMsgText{
+    margin-bottom: 2rem;
+}
+.formSendMsg{
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fill-available;
+    justify-content: space-between;
+}
+.sendMsgBtn{
+    background-color: rgb(111, 185, 205);
+}
+
+.createPostContainer{
+    grid-area: i3;
+    
+}
+.createPostBtn{
+    background-color: rgb(205, 150, 111);
+}
+.formCreatePost{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.additionalTextArea{
+    outline: none;
+    border: 1px solid gainsboro;
+}
