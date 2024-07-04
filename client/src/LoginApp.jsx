@@ -71,10 +71,10 @@ export function LoginApp(){
                         <h2 className="text-3xl font-bold text-gray-800 mb-6 p-3">Login</h2>
                         <form className='p-3' onSubmit={handleLogin} action='http://127.0.0.1:5000/login-api' method='post'>
                             <div className="mb-3">
-                                <input onChange={e => setName(e.target.value)} type="text" id="username" name='name' placeholder="Username"/>
+                                <input  className={styles.input} onChange={e => setName(e.target.value)} type="text" id="username" name='name' placeholder="Username"/>
                             </div>
                             <div className="mb-6">
-                                <input type="password" onChange={e => setPassword(e.target.value)} id="password" name='password' placeholder="********"/>
+                                <input className={styles.input} type="password" onChange={e => setPassword(e.target.value)} id="password" name='password' placeholder="********"/>
                             </div>
                             <button type="submit" className={`${styles.submitBtn} w-full bg-tomato text-white py-2 px-4 rounded-md shadow-md hover:bg-opacity-90 transition duration-300`}>
                                 Sign In

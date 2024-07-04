@@ -11,22 +11,22 @@ export function CreatePost(){
 
             <form method='post' action='/create-post-api' className={styles.formCreatePost}>
               <div className="mb-4">
-                <label htmlFor="title" className="block text-gray-700 font-medium mb-2">Title</label>
+                <label  htmlFor="title" className={`${styles.createPostLabel} block text-gray-700 font-medium mb-2`}>Title</label>
                 <input 
                   type="text" 
                   name="title" 
                   id='title'
-                  className="w-full p-3 border rounded" 
-                  placeholder="Create title" 
+                  className={`${styles.input} w-full p-3 rounded`}
+                  placeholder="Write title" 
                 />
               </div>
               <div className="mb-4">
-                <label htmlFor="additionalInfo" className="block text-gray-700 font-medium mb-2">Additional info about post</label>
+                <label  htmlFor="additionalInfo" className={`${styles.createPostLabel} block text-gray-700 font-medium mb-2`}>Additional info about post</label>
                 <textarea
                   name="about" 
                   id='additionalInfo'
-                  className={`${styles.additionalTextArea} w-full p-3 border rounded`} 
-                  placeholder="Your additional info" 
+                  className={`${styles.additionalTextArea} ${styles.input} w-full p-3 rounded`} 
+                  placeholder="Write additional info" 
                 />
               </div>
               <button 

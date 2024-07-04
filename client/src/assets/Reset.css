@@ -59,7 +59,7 @@ input, textarea, button, select {
 }
 textarea{
     max-height: 110px;
-	min-height: 45px;
+	min-height: 52px;
 }
 input::-ms-clear {
 	display: none;

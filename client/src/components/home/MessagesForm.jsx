@@ -14,7 +14,7 @@ export function MessageForm(){
                   type="text" 
                   id="username" 
                   name="username" 
-                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-gray-700" 
+                  className={`${styles.input} w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-gray-700`} 
                   placeholder="Send username" 
                 />
               </div>
@@ -23,7 +23,7 @@ export function MessageForm(){
                 <input
                   id="message" 
                   name="message" 
-                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-gray-700" 
+                  className={`${styles.input} w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-gray-700`} 
                   placeholder="Your message" 
                 />
               </div>
